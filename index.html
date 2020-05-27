@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metal Discovery API App</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Amiri|Cinzel|Cinzel+Decorative&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+      <header>
+        <h1 id="title">Metal Discovery App</h1>
+      </header>
+
+      <section class="subList">
+        <h2 id="selectSub">Select a Subgenre</h2>
+        <input type="button" name="submit" value="Alternative Metal" id="altMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Avant-garde Metal" id="avantGarde" class="subList-btn btn">
+        <input type="button" name="submit" value="Black Metal" id="blkMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Christian Metal" id="christianMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Death Metal" id="deathMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Deathcore" id="deathCore" class="subList-btn btn">
+        <input type="button" name="submit" value="Doom Metal" id="doomMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Extreme Metal" id="exMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Folk Metal" id="folkMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Glam Metal" id="glamMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Gothic Metal" id="gothMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Grindcore" id="grind" class="subList-btn btn">
+        <input type="button" name="submit" value="Heavy Metal Music" id="heavyMetalMusic" class="subList-btn btn">
+        <input type="button" name="submit" value="Industrial Metal" id="indusMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Latin Metal" id="latMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Metalcore" id="metalCore" class="subList-btn btn">
+        <input type="button" name="submit" value="Post-metal" id="postMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Power Metal" id="powerMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Progressive Metal" id="progressMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Speed Metal" id="speedMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Stoner Metal" id="stoneMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Symphonic Metal" id="symphMetal" class="subList-btn btn">
+        <input type="button" name="submit" value="Thrash Metal" id="thrashMetal" class="subList-btn btn">
+      </section>
+
+      <form id="js-form">
+        <h2 id="searchBand">Search For A Band</h2>
+        <p id="headsUp">(In some search cases, "band" may need to be added to the end of an entry for proper results)</p><br>
+        <label for="js-search-term" class="labelSearchBand">Search Band</label>
+        <input type="text" name="search-term" id="js-search-term" placeholder="Metallica" required><br>
+        <label for="js-max-results" class="labelMaxVids">Maximum Videos to Return</label>
+        <input type="number" name="max-results" id="js-max-results" value="10"><br>
+        <input type="submit" value="Rock On!" id="searchGo">
+      </form>
+
+      <p id="js-error-message" class="error-message"></p>
+
+      <section id="resultsContainer">
+        <section class="results hidden"></section>
+        <section class="resultsVids hidden"></section>
+      </section>
+
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>

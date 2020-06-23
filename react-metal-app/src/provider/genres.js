@@ -3,7 +3,7 @@ import { genres } from '../data'
 
 const GenreContext = createContext()
 
-export function GenreProvider({childre}) {
+export function GenreProvider({children}) {
     return <GenreContext.Provider value={genres}>{children}</GenreContext.Provider>
 }
 

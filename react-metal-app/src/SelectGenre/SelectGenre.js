@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './SelectGenre.css';
-import OptionList from './OptionList'
+import { useGenre } from '../provider/genres'
+import GenreList from './GenreList';
 
-class SelectGenre extends Component {
-    render(){
-        
-        const {}
+export default function SelectGenre() {
+    const genre = useGenre();
 
-        return(
-            <div>
-                <p>Select a Genre:</p>
-                    {list}
-                <button>Search</button>
-            </div>
-        )
-    }
+    return(
+        <GenreList />
+    )
 }
-
-export default SelectGenre

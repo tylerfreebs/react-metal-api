@@ -1,11 +1,17 @@
 import React, { Component } from 'react';
 import './SelectGenre.css';
+import OptionList from './OptionList'
 
 class SelectGenre extends Component {
     render(){
+        
+        const {}
+
         return(
             <div>
-                <p>This is a test: SelectGenre</p>
+                <p>Select a Genre:</p>
+                    {list}
+                <button>Search</button>
             </div>
         )
     }

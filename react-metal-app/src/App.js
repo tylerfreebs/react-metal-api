@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import SearchBand from './SearchBand/SearchBand'
 import SelectGenre from './SelectGenre/SelectGenre'
-// import STORE from './STORE'
 
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <SearchBand />
-                <SelectGenre />
-            </div>
-          );
-    }
+export default function App({ genres }) {
+    return (
+        <div>
+            <ul>
+                {genres.map((genre) => (
+                    <li key={genre.id}>
+                        <button>{genre.name}</button>
+                    </li>
+                ))}
+            </ul>
+            <SearchBand />
+            <SelectGenre />
+        </div>
+    );
   
 }
-
-export default App;
